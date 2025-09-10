@@ -135,7 +135,7 @@ ggplot(data = mpg) +
 Read ?facet_wrap. What does nrow do? What does ncol do? What other options control the layout of the individual panels? 
 
 ```{r}
-
+nrow sets the number of rows of facet panels, ncol sets the number of columns. Other options like scales, as.table, dir, and strip.position control whether axes are fixed or free, how panels are filled, and where facet labels appear.
 ```
 
 
@@ -243,6 +243,7 @@ ggplot(data = mpg) +
 
 
 3.  Will these two graphs look different? Why/why not?
+-They will look the same, both graphs have data and mappings so they will be identical.
 ```{r}
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
   geom_point() + 
