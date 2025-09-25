@@ -14,7 +14,7 @@ library (terra) # for raster
 library(tmap) # Thematic maps are geographical maps in which spatial data distributions are visualized
 
 #Let’s get started with that copepod richness data. In this part of the course we are going to clean it up and run some basic analyses.
-#We will load in the data using a package from the tidyverse called readr. readr is handy because it does extra checks on data consistency over and above what the base R functions do. 
+#We will load in the data using a package from tidyverse called readr, readr is handy because it does extra checks on data consistency over and above what the base R functions do. 
 
 library(readr)
 dat <- read_csv("data-for-course/copepods_raw.csv")
